@@ -1,0 +1,48 @@
+/*
+
+bootstrap template - login-form Template
+Version: 1.0
+By: dave-cheon
+
+*/
+body{
+    font-family: 'NotoSans-Regular';
+}
+
+.spaceLeft {
+    margin-left: 10px;
+}
+
+.spaceRight {
+    margin-right: 10px;
+}
+
+/* custom checkbox */
+.gs-checkbox {
+    cursor: pointer;
+}
+
+    .gs-checkbox:before {
+        content: "\f096";
+    }
+
+    .gs-checkbox.active:before {
+        content: "\f046";
+    }
+
+    .gs-checkbox > input[type=checkbox] {
+        display: none;
+    }
+
+footer {
+    float: left;
+    width: 100%;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+#jssor_1 {
+    margin-bottom: 20px;
+}

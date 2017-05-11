@@ -1,0 +1,140 @@
+﻿@{
+    ViewBag.Title = "";
+}
+
+@Scripts.Render("~/Scripts/Site")
+
+<body onload="javascript: openPopup()">
+
+    <!--슬라이더 100% * 500px-->
+    <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden; visibility: hidden; margin-bottom: 20px;">
+        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('../../img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+        </div>
+        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
+            <div data-p="225.00">
+                <img data-u="image" src="~/img/pillow/main-pillow(2).jpg" />
+                <div style="position: absolute; top: 30px; left: 30px; width: 480px; height: 120px; font-size: 50px; color: #ffffff; line-height: 60px;">TOUCH SWIPE SLIDER</div>
+                <div style="position: absolute; top: 300px; left: 30px; width: 480px; height: 120px; font-size: 30px; color: #ffffff; line-height: 38px;">Build your slider with anything, includes image, content, text, html, photo, picture</div>
+            </div>
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="~/img/IMG_0115.JPG" />
+                <div style="position: absolute; top: 10px; left: 30px; width: 480px; height: 120px; font-size: 50px; color: #000000; line-height: 60px;">Production</div>
+                <div style="position: absolute; top: 300px; left: 30px; width: 480px; height: 120px; font-size: 30px; color: #000000; line-height: 38px;">Special Production</div>
+            </div>
+            <div data-p="225.00" data-po="80% 55%" style="display: none;">
+                <img data-u="image" src="~/img/IMG_6240.JPG" />
+            </div>
+            <a data-u="any" href="http://www.jssor.com" style="display:none">Full Width Slider</a>
+        </div>
+        <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+            <div data-u="prototype" style="width:16px;height:16px;"></div>
+        </div>
+        <span data-u="arrowleft" class="jssora22l" style="top:0px;left:8px;width:40px;height:58px;" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora22r" style="top:0px;right:8px;width:40px;height:58px;" data-autocenter="2"></span>
+    </div>
+
+    <!--썸네일 100px * 100px -->
+    <div class="container">
+        <div class="col-md-3">
+            <div id="translateFlags" class="thumbnail" style="margin-bottom: 5px;">
+                <img src="~/img/qna.png" alt="Q&A" width="100" height="100">
+                <a href="/">
+                    <div class="caption">
+                        <h3>Q&A</h3>
+                        <p>1:1문의 입니다.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="thumbnail" style="margin-bottom: 5px">
+                <img src="~/img/review.png" alt="RE" width="100" style="height: 100px;">
+                <a href="/">
+                    <div class="caption">
+                        <h3>REVIEW</h3>
+                        <p>고객리뷰 입니다.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="thumbnail" style="margin-bottom: 5px">
+                <img src="~/img/notice.png" alt="NO" width="100" height="100">
+                <a href="/">
+                    <div class="caption">
+                        <h3>NOTICE</h3>
+                        <p>공지사항 입니다.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="thumbnail" style="margin-bottom: 5px">
+                <img src="~/img/mypage.png" alt="MY" width="100" height="100">
+                <a href="/">
+                    <div class="caption">
+                        <h3>MYPAGE</h3>
+                        <p>마이페이지 입니다.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--넓은 광고 부분 100% * 200px -->
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="~/img/ad-1900-200(1).jpg" alt="..">
+            </div>
+            <div class="item">
+                <img src="~/img/ad-1900x200(2).jpg" alt="...">
+            </div>
+            <div class="item">
+                <img src="~/img/ad-1900x200(3).jpg" alt="...">
+            </div>
+        </div>
+    </div>
+
+    <!--광고 썸네일 260px * 260px-->
+    <div style="text-align: center;">
+        <div class="col-md-3 col-lg-3">
+            <div class="thumbnail" style="margin-bottom: 5px">
+                <a href="/">
+                    <img src="~/img/ad1.jpg" alt="ad1" width="230" height="230">
+                </a>
+            </div>
+        </div>
+        <div class="col-md-3 col-lg-3">
+            <div class="thumbnail" style="margin-bottom: 5px">
+                <a href="/">
+                    <img src="~/img/ad2.jpg" alt="ad2" width="230" height="230">
+                </a>
+            </div>
+        </div>
+        <div class="col-md-3 col-lg-3">
+            <div class="thumbnail" style="margin-bottom: 5px">
+                <a href="/">
+                    <img src="~/img/ad3.jpg" alt="ad3" width="230" height="230">
+                </a>
+            </div>
+        </div>
+        <div class="col-md-3 col-lg-3">
+            <div class="thumbnail" style="margin-bottom: 5px">
+                <a href="/">
+                    <img src="~/img/ad4.jpg" alt="ad4" width="230" height="230">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>

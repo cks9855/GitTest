@@ -1,0 +1,68 @@
+﻿<div class="menubar">
+    <div id="google_translate_element" style="height:0px;">
+    </div>
+    <ul class="nav nav-pills pull-right" id="ul-1">
+        <li role="presentation" id="login"><a href="/Account/Login">로그인</a></li>
+        <li role="presentation"><a href="/Account/Register">회원가입</a></li>
+        <li role="presentation"><a href="/Home/Cart">장바구니</a></li>
+    </ul>
+</div>
+
+<script>
+    var loginStatus = '@Session["Login"]';
+    if (loginStatus == "success") {
+        var parent = document.getElementById("ul-1");
+        var child0 = parent.children[0].children[0];
+        child0.textContent = "로그아웃";
+        child0.setAttribute("href", "/Account/Logout");
+        var child1 = parent.children[2].children[0];
+        var index = '@Session["Index"]';
+        child1.setAttribute("href", "/Home/Cart?index=" + index);
+    }
+</script>
+
+<!--머리-->
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-left" href="/">
+                <img src="~/img/tivua-logo.png" alt="" width="190" height="60">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">소개<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/Home/Road">찾아오는 길</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/Home/Product">특징</a>
+                </li>
+                <li>
+                    <a href="#">문의</a>
+                </li>
+                <li>
+                    <a href="#">후기</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">구매<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/Home/Product_Buy1">탄소 매트</a></li>
+                        <li><a href="/Home/Product2_Buy1">배게</a></li>
+                        <li><a href="#">상품3</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">기타 상품</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
